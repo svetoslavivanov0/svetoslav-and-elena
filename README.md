@@ -1,6 +1,6 @@
 # wedding
 
-## Project setup test
+## Project setup
 ```
 npm install
 ```
