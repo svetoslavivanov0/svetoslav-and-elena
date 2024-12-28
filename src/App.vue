@@ -9,6 +9,7 @@
         <ParallaxSection/>
         <RSVPForm/>
     </div>
+
 </template>
 
 <script>
