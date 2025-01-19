@@ -17,7 +17,6 @@
                 </div>
 
                 <div class="image">
-                    <img src='../assets/background.jpeg' alt=''>
                 </div>
             </div>
         </div>
@@ -43,6 +42,10 @@
     }
 
     .image {
+        background: url('../assets/b19390c7-074b-4370-9a74-19c864067f7d.jpeg');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
         width: 350px;
         height: 450px;
         border-radius: 50%;
@@ -98,6 +101,7 @@
 
         @media (max-width: 961px) {
             margin-bottom: 50px;
+            padding: 0 20px;
         }
     }
 

@@ -48,6 +48,12 @@
             </div>
             <div
                 class="header-action"
+                @click="scrollToSection('venue')"
+            >
+                Локация
+            </div>
+            <div
+                class="header-action"
                 @click="scrollToSection('form-section')"
             >
                 Потвърди присъствие
@@ -82,7 +88,7 @@ export default {
         const scrollToSection = (section) => {
             const target = document.getElementById(section);
             if (target) {
-                const yOffset = -30;
+                const yOffset = -70;
                 const yPosition =
                     target.getBoundingClientRect().top + window.scrollY + yOffset;
                 window.scrollTo({ top: yPosition, behavior: "smooth" });
