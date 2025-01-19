@@ -7,6 +7,7 @@
         <Footer/>
         <WeddingInfo/>
         <ParallaxSection/>
+        <Venue/>
         <RSVPForm/>
     </div>
 
@@ -21,10 +22,12 @@ import Footer from "@/components/Footer.vue";
 import Hero from '@/components/Hero.vue';
 import History from '@/components/History.vue';
 import TextWithImage from '@/components/TextWithImage.vue';
+import Venue from '@/components/Venue.vue';
 
 export default {
     name: 'App',
     components: {
+        Venue,
         Header,
         Footer,
         RSVPForm,

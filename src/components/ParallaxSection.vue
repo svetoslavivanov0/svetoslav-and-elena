@@ -40,6 +40,7 @@
 
 <style scoped>
 .wrapper {
+    background: #f9f1e8;
     text-align: center;
     color: #7e4847;
     padding: 70px 0;
@@ -90,7 +91,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #f9f1e8;
 }
 
 .text-content {

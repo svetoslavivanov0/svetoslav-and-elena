@@ -116,7 +116,7 @@ h2 {
     left: 50%;
 
     @media (max-width: 961px) {
-        left: 3%;
+        display: none;
     }
 }
 
@@ -150,9 +150,21 @@ h2 {
     right: -46px;
 
     @media (max-width: 961px) {
+        top: auto;
+        bottom: 0;
+        width: 5px;
+        height: 50px;
         right: auto;
-        transform: unset;
-        left: -12%;
+        transform: translate(0, 100%);
+        border: 0;
+        border-radius: 0;
+        background-color: #b2b2b3;
+    }
+}
+
+.container:last-child:after {
+    @media (max-width: 961px) {
+        display: none;
     }
 }
 
@@ -208,7 +220,7 @@ h2 {
     left: -46px;
 
     @media (max-width: 961px) {
-        left: -12%;
+        left: auto;
     }
 }
 
