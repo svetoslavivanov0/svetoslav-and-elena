@@ -99,6 +99,7 @@ export default {
 </script>
 <style scoped>
 .venue {
+    background: #fffbf8;
     padding: 50px 0 70px;
 
     h2 {

@@ -50,7 +50,6 @@ onMounted(() => {
     width: 100%;
     height: 100vh;
     background-image: url('@/assets/background.jpeg');
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
