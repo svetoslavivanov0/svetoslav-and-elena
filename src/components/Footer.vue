@@ -89,7 +89,7 @@ h2 {
         font-size: 18px;
     }
 
-    @media (max-width: 961px) {
+    @media screen and (max-width: 961px) {
         padding: 50px 0;
     }
 }
@@ -105,8 +105,7 @@ h2 {
     margin: 0 auto;
 }
 
-/* Vertical line for the timeline */
-.timeline::after {
+.timeline:after {
     content: '';
     position: absolute;
     width: 6px;
@@ -114,11 +113,15 @@ h2 {
     top: 0;
     bottom: 0;
     left: 50%;
+    display: block; /* Ensure pseudo-element renders */
+}
 
     @media (max-width: 961px) {
+    .timeline:after {
         display: none;
     }
 }
+
 
 /* Container for each event */
 .container {
@@ -127,7 +130,7 @@ h2 {
     width: calc(50% - 55px);
     margin-top: 50px;
 
-    @media (max-width: 961px) {
+    @media screen and (max-width: 961px) {
         width: auto;
         margin-left: 10%;
         margin-right: 10%;
@@ -135,7 +138,7 @@ h2 {
 }
 
 /* Circle that appears for each event */
-.container::after {
+.container:after {
     content: '';
     position: absolute;
     width: 25px;
@@ -148,8 +151,10 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
     right: -46px;
+}
 
-    @media (max-width: 961px) {
+@media screen and (max-width: 961px) {
+    .container:after {
         top: auto;
         bottom: 0;
         width: 5px;
@@ -160,11 +165,17 @@ h2 {
         border-radius: 0;
         background-color: #b2b2b3;
     }
-}
 
-.container:last-child:after {
-    @media (max-width: 961px) {
+    .container:last-child:after {
         display: none;
+    }
+
+    .right:after {
+        left: auto !important;
+    }
+
+    .right {
+        left: auto !important;
     }
 }
 
@@ -172,7 +183,7 @@ h2 {
 .left {
     left: 30px;
 
-    @media (max-width: 961px) {
+    @media screen and (max-width: 961px) {
         left: auto;
     }
 }
@@ -180,14 +191,10 @@ h2 {
 /* Right-side event */
 .right {
     left: calc(50% + 30px);
-
-    @media (max-width: 961px) {
-        left: auto;
-    }
 }
 
 /* Arrows pointing towards the timeline */
-.left::before {
+.left:before {
     display: none;
     content: " ";
     height: 0;
@@ -201,7 +208,7 @@ h2 {
     border-color: transparent transparent transparent white;
 }
 
-.right::before {
+.right:before {
     display: none;
     content: " ";
     height: 0;
@@ -216,12 +223,8 @@ h2 {
 }
 
 /* Fix position for circles on the right */
-.right::after {
+.right:after {
     left: -46px;
-
-    @media (max-width: 961px) {
-        left: auto;
-    }
 }
 
 /* Event content styling */
@@ -236,7 +239,7 @@ h2 {
         margin-top: 0;
     }
 
-    @media (max-width: 961px) {
+    @media screen and (max-width: 961px) {
         padding: 30px 0;
     }
 }
